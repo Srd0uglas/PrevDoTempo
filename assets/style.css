@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    /* colocar o body p/ ocupar toda a tela */
+    height: 100vh;
+    /* Vai ocupar a tela toda */
+    width: 100vw;
+
+    /* Jogar todo o conteúdo p/ centro */
+    display: flex;
+
+    /* Alinhar no eixo vertical(em pé) */
+    align-items: center;
+    /* Alinhar no eixo horizontal(deitado) */
+    justify-content: center;
+    background-image: url("https://images.pexels.com/photos/751734/pexels-photo-751734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    /* Definiu que a imagem vai ocupar a tela inteira */
+    background-size: cover;
+    /* color: white; */
+}
+.caixa-maior{
+    background:black;
+    /* deixar o preto um pouco mais claro */
+    opacity: 0.8;
+    border-radius: 25px;
+    padding: 20px;
+    width: 95%;
+    max-width: 450px;
+}
+.caixa-media{
+    /* separou os textos do input */
+    margin-top: 30px;
+}
+input{
+    border: none;
+    /* retirar a linha azul dentro da caixa de texto quando ela é clicada */
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 15px;
+    background-color: #7c7c7c2b;
+    color: #fff;
+    width: 80%;
+}
+.botao-busca{
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: #7c7c7caa;
+    /* deixar uma maozinha quando passar o mouse */
+    cursor: pointer;
+    /* jogar o botão para a direita */
+    float: right;
+
+}
+.img-busca{
+    width: 25px;
+}
+.cidade{
+    font-size: 28px;
+    color: #ffff;
+    font-weight: 300;
+}
+.temp{
+    font-size: 20px;
+    color:#fff;
+}
+.caixa-menor{
+    /* Tudo que está dentro da div caixa-menor vai ficar um do lado do outro */
+    display: flex;
+    /* centralizou na vertical */
+    align-items: center;
+    margin-top: 20px;
+    color: #fff;
+}
+.texto-previsao{
+    color: #fff;
+    /* distanciou um pouco da direita e foi p esquerda */
+    margin-left: 20px;
+}
+.umidade{
+    color:#fff;
+    margin-top: 20px;
+}
